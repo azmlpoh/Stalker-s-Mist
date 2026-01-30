@@ -37,7 +37,7 @@ function create(event)
 function update()
 {
 	if (character.getAnimName() == "firstDeath" && character.isAnimFinished()) start();
-	if (controls.ACCEPT) end();
+	if (FlxG.mouse.justPressed) end();
 	camera.zoom = lerp(camera.zoom, defaultCamZoom, 0.05);
 }
 
