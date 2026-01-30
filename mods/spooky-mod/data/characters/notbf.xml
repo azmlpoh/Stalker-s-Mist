@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="notbf" flipX="true" camx="135" camy="-50" isPlayer="true" icon="notbf" gameOverChar="death">
+	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="true"/>
+	<anim name="singUP" anim="up" x="-14" y="42" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="51" y="26" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="-59" y="9" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="1" y="-33" fps="24" loop="false"/>
+	<anim name="trans" anim="transition" x="152" y="79" fps="24" loop="false"/>
+</character>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="openeyesGRAAH.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbole 20000" x="24" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20001" x="24" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20002" x="24" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20003" x="24" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20004" x="24" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20005" x="878" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20006" x="878" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20007" x="1732" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20008" x="1732" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20009" x="2586" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20010" x="2586" y="24" width="830" height="970"/>
+	<SubTexture name="Symbole 20011" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20012" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20013" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20014" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20015" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20016" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20017" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20018" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20019" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20020" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20021" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20022" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20023" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20024" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20025" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20026" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20027" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20028" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20029" x="24" y="1018" width="830" height="970"/>
+	<SubTexture name="Symbole 20030" x="24" y="1018" width="830" height="970"/>
+</TextureAtlas>

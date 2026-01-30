@@ -1,0 +1,19 @@
+{
+    "params": [
+        {
+            "name": "Strumline",
+            "type": " StrumLine",
+            "defaultValue": 0
+        },
+        {
+            "name": "Character in strumline",
+            "type": "Int(0, 999999)",
+            "defaultValue": "0"
+        },
+        {
+            "name": "New Character",
+            "type": "String",
+            "defaultValue": "dad"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": true,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 115,
+	"difficulties": [
+		"normal"
+	],
+	"needsVoices": true,
+	"parsedColor": -1,
+	"displayName": "Super Cool Song",
+	"icon": "Icon",
+	"name": "song",
+	"color": "#FFFFFF"
+}

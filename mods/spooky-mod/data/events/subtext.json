@@ -1,0 +1,19 @@
+{
+    "params": [
+        {
+            "name": "Text",
+            "type": "String",
+            "defaultValue": ""
+        },
+        {
+            "name": "Format range start",
+            "type": "Int(0, 999, 1)",
+            "defaultValue": "0"
+        },
+        {
+            "name": "Format range end",
+            "type": "Int(0, 999, 1)",
+            "defaultValue": "0"
+        }
+    ]
+}

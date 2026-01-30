@@ -1,0 +1,34 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.65" name="followed" folder="stage/">
+
+	<sprite name="bg1" sprite="bg1" scroll="0.5"/>
+	<sprite name="bg1ex" sprite="bg1" scroll="0.5"/>
+	<sprite name="bg2" sprite="bg2" y ="50" scroll="0.75"/>
+	<sprite name="bg2ex" sprite="bg2" y ="50" scroll="0.75"/>
+	<sprite name="legs" sprite="notbfLEGS">
+		<anim name="idle" anim="idle" fps="24" loop="true"/>
+	</sprite>
+
+	<sprite name="p2bg1" sprite="bg2bg1" y="-300" scroll="0.9"/>
+
+	<sprite name="realTrees" sprite="bg3bg1"/>
+
+	<sprite name="bgfinale" sprite="bgfinale">
+		<anim name="idle" anim="Symbole" fps="24" loop="true"/>
+	</sprite>
+	<sprite name="mlegs" sprite="legsfinale">
+		<anim name="idle" anim="legss" fps="24" loop="true"/>
+	</sprite>
+
+	<opponent x="625" y="800"/>
+	<player x="1000" y="500"/>
+
+	<sprite name="fog" sprite="fog" y="875" scroll="1.25" alpha="0.25"/>
+	<sprite name="fogex" sprite="fog" y="875" scroll="1.25" alpha="0.25"/>
+
+	<sprite name="fade" sprite="fade" x="-1500" scaley="1200" scalex="2.5" scrollx="0.75"/>
+	<sprite name="monsterstart" sprite="openeyesGRAAH" x="-650" y="275" scrollx="0.75">
+		<anim name="idle" anim="Symbole 2" fps="24" loop="false"/>
+		<property name="alpha" type="float" value="0"/>
+	</sprite>
+</stage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bgfinale.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbole0000" x="24" y="24" width="2009" height="1236"/>
+	<SubTexture name="Symbole0001" x="24" y="24" width="2009" height="1236"/>
+	<SubTexture name="Symbole0002" x="24" y="24" width="2009" height="1236"/>
+	<SubTexture name="Symbole0003" x="24" y="24" width="2009" height="1236"/>
+	<SubTexture name="Symbole0004" x="24" y="24" width="2009" height="1236"/>
+	<SubTexture name="Symbole0005" x="24" y="24" width="2009" height="1236"/>
+	<SubTexture name="Symbole0006" x="2057" y="24" width="1960" height="1236" frameX="0" frameY="0" frameWidth="2009" frameHeight="1236"/>
+	<SubTexture name="Symbole0007" x="2057" y="24" width="1960" height="1236" frameX="0" frameY="0" frameWidth="2009" frameHeight="1236"/>
+	<SubTexture name="Symbole0008" x="2057" y="24" width="1960" height="1236" frameX="0" frameY="0" frameWidth="2009" frameHeight="1236"/>
+	<SubTexture name="Symbole0009" x="2057" y="24" width="1960" height="1236" frameX="0" frameY="0" frameWidth="2009" frameHeight="1236"/>
+	<SubTexture name="Symbole0010" x="2057" y="24" width="1960" height="1236" frameX="0" frameY="0" frameWidth="2009" frameHeight="1236"/>
+	<SubTexture name="Symbole0011" x="2057" y="24" width="1960" height="1236" frameX="0" frameY="0" frameWidth="2009" frameHeight="1236"/>
+	<SubTexture name="Symbole0012" x="24" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0013" x="24" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0014" x="24" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0015" x="24" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0016" x="24" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0017" x="24" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0018" x="2057" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0019" x="2057" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0020" x="2057" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0021" x="2057" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0022" x="2057" y="1284" width="2009" height="1236"/>
+	<SubTexture name="Symbole0023" x="2057" y="1284" width="2009" height="1236"/>
+</TextureAtlas>

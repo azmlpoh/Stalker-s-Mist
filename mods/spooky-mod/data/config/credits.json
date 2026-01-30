@@ -1,0 +1,116 @@
+{
+	"scale" : 0.75,
+	"spacing" : 125,
+	"iconFolder" : "menus/credits/",
+	"linkSpacing" : 100,
+	"credits" : [
+		{
+			"name" : "Lucy87",
+			"roles" : ["Coder"],
+			"icon" : "lucy",
+			"desc" : "Just a little bit silly at coding :3",
+			"links" : [
+				{
+					"name" : "Youtube",
+					"site" : "https://www.youtube.com/@loocy87"
+				},
+				{
+					"name" : "Scratch",
+					"site" : "https://scratch.mit.edu/users/a-d-e-n/"
+				},
+				{
+					"name" : "Gamebanana",
+					"site" : "https://gamebanana.com/members/2286155"
+				}
+			]
+		},
+		{
+			"name" : "Blak64",
+			"roles" : ["Artist", "Animator"],
+			"icon" : "blak64",
+			"desc" : "FRENCH DUDE",
+			"links" : [
+				{
+					"name" : "Youtube",
+					"site" : "https://www.youtube.com/@blak64"
+				},
+				{
+					"name" : "Twitter",
+					"site" : "https://x.com/thiscoffeebean"
+				},
+				{
+					"name" : "Gamebanana",
+					"site" : "https://gamebanana.com/members/1960947"
+				}
+			]
+		},
+		{
+			"name" : "Gracio",
+			"roles" : ["Composer"],
+			"icon" : "gracio",
+			"altIcon" : "graciogoofy",
+			"desc" : "I hate this stupid tree",
+			"links" : [
+				{
+					"name" : "Youtube",
+					"site" : "https://www.youtube.com/@Gracio279"
+				},
+				{
+					"name" : "Twitter",
+					"site" : "https://x.com/Gracio978"
+				},
+				{
+					"name" : "Gamebanana",
+					"site" : "https://gamebanana.com/members/2078794"
+				}
+			]
+		},
+		{
+			"name" : "Diteso",
+			"roles" : ["Charter"],
+			"icon" : "diteso",
+			"desc" : "I love this amazing tree",
+			"links" : [
+				{
+					"name" : "Youtube",
+					"site" : "https://www.youtube.com/@diteso_"
+				},
+				{
+					"name" : "Twitter",
+					"site" : "https://x.com/diteso_"
+				},
+				{
+					"name" : "Gamebanana",
+					"site" : "https://gamebanana.com/members/2230732"
+				}
+			]
+		},
+		{
+			"name" : "Chikety",
+			"roles" : ["Artist"],
+			"icon" : "chikety",
+			"desc" : "I'm better than Gracio",
+			"links" : [
+				{
+					"name" : "Twitter",
+					"site" : "https://x.com/chiketyth"
+				},
+				{
+					"name" : "Gamebanana",
+					"site" : "https://gamebanana.com/members/1993684"
+				}
+			]
+		},
+		{
+			"name" : "Alex",
+			"roles" : ["Artist"],
+			"icon" : "alex",
+			"desc" : "I am super cool artist wowie.",
+			"links" : [
+				{
+					"site" : "https://x.com/Alexelpana69"
+				}
+			]
+		}
+	]
+}

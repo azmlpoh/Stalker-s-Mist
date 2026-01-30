@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="notbf3" flipX="true" camx="-100" camy="-75" isPlayer="true" icon="notbf">
+	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="true"/>
+	<anim name="singUP" anim="up" x="-10" y="32" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="28" y="1" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="-5" y="10" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="11" y="-39" fps="24" loop="false"/>
+</character>
