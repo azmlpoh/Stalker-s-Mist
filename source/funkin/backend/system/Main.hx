@@ -117,7 +117,7 @@ class Main extends Sprite
 	public static function createWatermark() {
 		watermarkCamera = new FlxCamera();
 		watermarkCamera.bgColor = 0x00000000;
-		watermarkCamera.alpha = 0.7;
+		watermarkCamera.alpha = 0.6;
 		FlxG.cameras.add(watermarkCamera, false);
 
 		watermarkText = new FlxText(0, 0, FlxG.width, "被晒成干的橙子-移植\nUID:1631228311", 28);
@@ -129,7 +129,6 @@ class Main extends Sprite
 		watermarkText.borderQuality = 2;
 		watermarkText.alignment = "center";
 		watermarkText.screenCenter();
-		watermarkText.blend = 0;
 		watermarkText.cameras = [watermarkCamera];
 		watermarkText.scrollFactor.set(0, 0);
 
@@ -144,7 +143,6 @@ class Main extends Sprite
 		if (watermarkCamera != null) {
 			watermarkCamera.width = FlxG.width;
 			watermarkCamera.height = FlxG.height;
-			watermarkCamera.update();
 		}
 	}
 
