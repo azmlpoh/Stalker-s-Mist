@@ -1,5 +1,7 @@
 package funkin.backend.system;
 
+import flixel.FlxCamera;
+import flixel.text.FlxText;
 import funkin.editors.SaveWarning;
 import funkin.backend.assets.AssetsLibraryList;
 import funkin.backend.system.framerate.SystemInfo;
@@ -27,10 +29,7 @@ import funkin.backend.assets.ModsFolder;
 
 class Main extends Sprite
 {
-	// make this empty once you guys are done with the project.
-	// good luck /gen <3 @crowplexus
 	public static final releaseCycle:String = "Beta";
-	// add a version number in dis shid rn 
 	public static var releaseVersion(get, default):String = null;
 	public static function get_releaseVersion():String {
 		if (releaseVersion != null)
@@ -48,20 +47,19 @@ class Main extends Sprite
 	public static var scaleMode:FunkinRatioScaleMode;
 	public static var framerateSprite:funkin.backend.system.framerate.Framerate;
 
-	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels).
-	var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels).
-	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
-	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
+	public static var watermarkText:FlxText;
+	public static var watermarkCamera:FlxCamera;
+	public static var watermarkVisible:Bool = true;
+
+	var gameWidth:Int = 1280;
+	var gameHeight:Int = 720;
+	var skipSplash:Bool = true;
+	var startFullscreen:Bool = false;
 
 	public static var game:FunkinGame;
 
-	/**
-	 * The time since the game was focused last time in seconds.
-	 */
 	public static var timeSinceFocus(get, never):Float;
 	public static var time:Int = 0;
-
-	// You can pretty much ignore everything from here on - your code should go in your states.
 
 	#if ALLOW_MULTITHREADING
 	public static var gameThreads:Array<Thread> = [];
@@ -90,7 +88,6 @@ class Main extends Sprite
 		#end
 	}
 
-	@:dox(hide)
 	public static var audioDisconnected:Bool = false;
 
 	public static var changeID:Int = 0;
@@ -102,7 +99,6 @@ class Main extends Sprite
 			""
 		#end;
 	public static var startedFromSource:Bool = #if TEST_BUILD true #else false #end;
-
 
 	private static var __threadCycle:Int = 0;
 	public static function execAsync(func:Void->Void) {
@@ -116,6 +112,40 @@ class Main extends Sprite
 
 	private static function getTimer():Int {
 		return time = Lib.getTimer();
+	}
+
+	public static function createWatermark() {
+		watermarkCamera = new FlxCamera();
+		watermarkCamera.bgColor = 0x00000000;
+		watermarkCamera.alpha = 0.7;
+		FlxG.cameras.add(watermarkCamera, false);
+
+		watermarkText = new FlxText(0, 0, FlxG.width, "被晒成干的橙子-移植\nUID:1631228311", 28);
+		watermarkText.font = Paths.font("nbb.ttf");
+		watermarkText.color = 0xFFA500;
+		watermarkText.borderStyle = flixel.text.FlxTextBorderStyle.OUTLINE;
+		watermarkText.borderColor = 0x00FFFF;
+		watermarkText.borderSize = 3;
+		watermarkText.borderQuality = 2;
+		watermarkText.alignment = "center";
+		watermarkText.screenCenter();
+		watermarkText.blend = 0;
+		watermarkText.cameras = [watermarkCamera];
+		watermarkText.scrollFactor.set(0, 0);
+
+		if (FlxG.state != null)
+			FlxG.state.add(watermarkText);
+		watermarkText.visible = watermarkVisible;
+	}
+
+	public static function updateWatermarkPosition() {
+		if (watermarkText == null) return;
+		watermarkText.screenCenter();
+		if (watermarkCamera != null) {
+			watermarkCamera.width = FlxG.width;
+			watermarkCamera.height = FlxG.height;
+			watermarkCamera.update();
+		}
 	}
 
 	public static function loadGameSettings() {
@@ -141,7 +171,7 @@ class Main extends Sprite
 		funkin.backend.scripting.GlobalScript.init();
 		#end
 
-		#if sys /*(sys && TEST_BUILD)*/
+		#if sys
 			trace("Used cne test / cne build. Switching into source assets.");
 			#if MOD_SUPPORT
 			ModsFolder.modsPath = #if desktop './${pathBack}mods/' #else Sys.getCwd() + '${pathBack}mods/' #end;
@@ -151,7 +181,6 @@ class Main extends Sprite
 			#elseif USE_ADAPTED_ASSETS
 			Paths.assetsTree.__defaultLibraries.push(ModsFolder.loadLibraryFromFolder('assets', #if desktop './assets/' #else Sys.getCwd() + 'assets/' #end, true));
 			#end
-
 
 		var lib = new AssetLibrary();
 		@:privateAccess
@@ -177,6 +206,8 @@ class Main extends Sprite
 		#if DARK_MODE_WINDOW
 		if(funkin.backend.utils.NativeAPI.hasVersion("Windows 10")) funkin.backend.utils.NativeAPI.redrawWindowHeader();
 		#end
+
+		createWatermark();
 
 		ModsFolder.init();
 		#if MOD_SUPPORT
@@ -215,14 +246,11 @@ class Main extends Sprite
 
 	private static function onStateSwitch() {
 		scaleMode.resetSize();
+		updateWatermarkPosition();
 	}
 
 	private static function onStateSwitchPost() {
-		// manual asset clearing since base openfl one doesnt clear lime one
-		// doesnt clear bitmaps since flixel fork does it auto
-
 		@:privateAccess {
-			// clear uint8 pools
 			for(length=>pool in openfl.display3D.utils.UInt8Buff._pools) {
 				for(b in pool.clear())
 					b.destroy();
